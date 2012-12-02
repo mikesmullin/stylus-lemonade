@@ -1,0 +1,49 @@
+{
+  "name": "stylus-lemonade",
+  "description": "Automatically Generate CSS Sprites from Images with Stylus",
+  "version": "0.1.8",
+  "author": "Mike Smullin",
+  "maintainers": [
+    {
+      "name": "Mike Smullin",
+      "email": "mike@smullindesign.com"
+    }
+  ],
+  "homepage": "http://github.com/mikesmullin/stylus-lemonade",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mikesmullin/stylus-lemonade.git"
+  },
+  "main": "./lib/stylus-lemonade",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/mikesmullin/stylus-lemonade/blob/master/LICENSE"
+    }
+  ],
+  "dependencies": {
+    "node-gd": ">= 0.1.8",
+    "async": "~0.1.22",
+    "crypto": "0.0.3",
+    "node-glob": "git://github.com/isaacs/node-glob.git"
+  },
+  "devDependencies": {
+    "stylus": "https://github.com/mikesmullin/stylus/tarball/master",
+    "mocha": "~1.7.3"
+  },
+  "engine": [
+    "node >=0.3.0"
+  ],
+  "keywords": [
+    "stylus",
+    "sprites",
+    "css",
+    "sprite",
+    "images"
+  ],
+  "scripts": {
+    "pretest": "coffee -o lib src/stylus-lemonade.coffee",
+    "test": "cd test/unit && ./test",
+    "posttest": "cd test/integration && ./start"
+  }
+}

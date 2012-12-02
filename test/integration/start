@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+node $DEBUG server.js && \
+google-chrome $PWD/../fixtures/public/index.html

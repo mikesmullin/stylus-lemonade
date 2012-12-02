@@ -1,0 +1,2 @@
+#!/usr/bin/env sh
+mocha $DEBUG --timeout 60000 --compilers coffee:coffee-script test.coffee

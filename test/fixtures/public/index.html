@@ -1,0 +1,23 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8"/>
+  <link href="stylesheets/application.css" rel="stylesheet" type="texamplet/css" />
+</head>
+<body onload="animate_flame()">
+  <div id="flame"></div>
+  <script>
+  function animate_flame() {
+    var frame = 0
+      , flame = document.getElementById('flame');
+    setInterval(function() {
+      frame = (frame + 1) % 6
+      flame.className = 'flame-frame-' + (frame + 1);
+    }, 100);
+  }
+  </script>
+  <div class="example1"></div>
+  <div class="example2"></div>
+  <div class="example3"></div>
+  <div class="example4"></div>
+  <div class="example5"></div>
+</body>

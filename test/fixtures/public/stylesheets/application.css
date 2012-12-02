@@ -1,0 +1,49 @@
+#flame {
+  background: url(../images/flame-4e9c94d3fa.png) no-repeat;
+  height: 512px;
+  width: 512px;
+}
+.flame-frame-1 {
+  background-position: 0 0 !important;
+}
+.flame-frame-2 {
+  background-position: 0 -512px !important;
+}
+.flame-frame-3 {
+  background-position: 0 -1024px !important;
+}
+.flame-frame-4 {
+  background-position: 0 -1536px !important;
+}
+.flame-frame-5 {
+  background-position: 0 -2048px !important;
+}
+.flame-frame-6 {
+  background-position: 0 -2560px !important;
+}
+.example1 {
+  background: url(../images/icons-ca35fa0eb8.png) no-repeat;
+  background-position: 0 0;
+  height: 256px;
+  width: 256px;
+}
+.example2 {
+  background: url(../images/ui-f3b4c8fb16.png) 0 0 no-repeat;
+  height: 128px;
+  width: 128px;
+}
+.example3 {
+  background: url(../images/x-b7c3547257.png) 0 0 repeat-x;
+  height: 48px;
+  width: 100%;
+}
+.example4 {
+  background: url(../images/y-551357a982.png) repeat-y 0 0;
+  width: 32px;
+  height: 100px;
+}
+.example5 {
+  background: url("../images/money-128x128.png") no-repeat;
+  width: 128px;
+  height: 128px;
+}

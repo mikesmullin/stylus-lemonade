@@ -1,0 +1,60 @@
+$ui = sprite-map('ui', 'spacing:10;')
+$icons = sprite-map('icons')
+$x = sprite-map('x', 'repeat:repeat-x;')
+$y = sprite-map('y', 'repeat:repeat-y;')
+
+// Default Functions
+
+image-width(img)
+  return image-size(img)[0]
+
+image-height(img)
+  return image-size(img)[1]
+
+// Basic Testing
+
+$animated_flame = sprite-map('flame')
+#flame
+  background: url(sprite-url($animated_flame)) no-repeat
+  height: sprite-height($animated_flame, 'flame_a_0001')
+  width: sprite-width($animated_flame, 'flame_a_0001')
+.flame-frame-1
+  background-position: sprite-position($animated_flame, 'flame_a_0001') !important
+.flame-frame-2
+  background-position: sprite-position($animated_flame, 'flame_a_0002') !important
+.flame-frame-3
+  background-position: sprite-position($animated_flame, 'flame_a_0003') !important
+.flame-frame-4
+  background-position: sprite-position($animated_flame, 'flame_a_0004') !important
+.flame-frame-5
+  background-position: sprite-position($animated_flame, 'flame_a_0005') !important
+.flame-frame-6
+  background-position: sprite-position($animated_flame, 'flame_a_0006') !important
+
+.example1
+  $img = 'time-256x256'
+  background: url(sprite-url($icons)) no-repeat
+  background-position: sprite-position($icons, $img)
+  height: sprite-height($icons, $img)
+  width: sprite-width($icons, $img)
+.example2
+  $img = 'time-128x128'
+  background: sprite($ui, $img) no-repeat
+  height: sprite-height($ui, $img)
+  width: sprite-width($ui, $img)
+.example3
+  $img = 'time-48x48'
+  background: sprite($x, $img) repeat-x
+  height: sprite-height($x, $img)
+  width: 100%
+.example4
+  $img = 'time-32x32'
+  background: url(sprite-url($y, $img)) repeat-y sprite-position($y, 'time-32x32')
+  width: sprite-width($y, $img)
+  height: 100px
+.example5
+  $img = '../images/money-128x128.png'
+  $_img = '../../public/images/money-128x128.png'
+  background: url($img) no-repeat
+  width: image-width($_img)
+  height: image-height($_img)
