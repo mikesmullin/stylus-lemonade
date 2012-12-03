@@ -93,3 +93,9 @@ Test
 ```bash
 npm test # build coffee, run mocha unit test, run chrome browser integration test
 ```
+
+To do
+-----
+ * add validation to ensure no stylus defined function can be called with invalid input to avoid cryptic lockups
+ * could probably simplify by calculating x, y, width, height using gd directly and once during render() rather than as-we-go
+ * find a way to provide image-width and image-height mixins that can accept public paths and evaluate private paths according to single lemonade config
