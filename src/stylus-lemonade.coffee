@@ -26,7 +26,7 @@
 ###
 
 gd = require 'node-gd'
-async = require 'async'
+async = require 'mini-async'
 fs = require 'fs'
 #pathlib = require 'path'
 #exec    = require('child_process').exec
@@ -123,7 +123,7 @@ class Lemonade
 
     # event emitted by stylus.render()
     stylus_instance.on 'end', (css, callback) =>
-      async.series @series, (err) =>
+      async.series @series, (next, err) =>
         return callback err, css if err
 
         # replace placeholders in css
@@ -146,7 +146,7 @@ class Lemonade
         series = []
         for own sprite_key, sprite of @sprites
           ((sprite) -> series.push (next) -> sprite.render next)(sprite)
-        async.series series, (err) =>
+        async.series series, (next, err) =>
           # complete stylus rendering
           callback null, css
 
@@ -260,7 +260,7 @@ class Sprite
           next()
           return
         return)(sprite.images[key])
-    async.series series, (err) ->
+    async.series series, (next, err) ->
       callback err if err
 
       # delete old sprites off disk

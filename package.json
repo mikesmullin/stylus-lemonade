@@ -23,9 +23,9 @@
   ],
   "dependencies": {
     "node-gd": ">= 0.1.8",
-    "async": "~0.1.22",
     "crypto": "0.0.3",
-    "node-glob": "git://github.com/isaacs/node-glob.git"
+    "node-glob": "git://github.com/isaacs/node-glob.git",
+    "mini-async": ">= 0.0.1"
   },
   "devDependencies": {
     "stylus": "https://github.com/mikesmullin/stylus/tarball/master",
