@@ -13,14 +13,15 @@ describe 'Lemonade', ->
     lemonade = require __dirname + '/../../lib/stylus-lemonade'
 
     stylus_instance = stylus(styl_input).set('filename', styl_input_filename)
-    lemonade = lemonade(null, {
-      image_path:  __dirname + '/../fixtures/private/images/',
-      sprite_path: __dirname + '/../fixtures/public/images/',
-      sprite_url:  '../images/'
-      debug: true
-      done: done
-    })
-    lemonade.infect stylus_instance
+    stylus_instance.use (stylus_instance) ->
+      lemonade = lemonade({
+        image_path:  __dirname + '/../fixtures/private/images/',
+        sprite_path: __dirname + '/../fixtures/public/images/',
+        sprite_url:  '../images/'
+        debug: true
+        done: done
+      })(stylus_instance)
+      return
     stylus_instance.render (err, css_output) ->
 
   beforeEach setup

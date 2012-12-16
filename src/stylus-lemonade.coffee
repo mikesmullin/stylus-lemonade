@@ -28,8 +28,6 @@
 gd = require 'node-gd'
 async = require 'mini-async'
 fs = require 'fs'
-#pathlib = require 'path'
-#exec    = require('child_process').exec
 instance = undefined
 
 class Lemonade
@@ -306,7 +304,16 @@ class Image
   coords: ->
     @px(@x * -1) + ' ' + @px(@y * -1)
 
-module.exports = (stylus_instance, options) ->
+###*
+* Usage:
+*
+* stylus.use require('stylus-lemonade')
+*   image_path:  __dirname + 'precompile/assets/sprites/'
+*   sprite_path: __dirname + 'static/public/assets/'
+*   sprite_url:  '/assets/'
+###
+module.exports = (options) ->
   instance = new Lemonade options
-  instance.infect stylus_instance if stylus_instance?
-  instance
+  (stylus_instance) ->
+    instance.infect stylus_instance if stylus_instance?
+    instance

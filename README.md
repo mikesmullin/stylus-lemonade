@@ -24,7 +24,7 @@ For the very latest and most comprehensive example, see [test/integration/server
 ```javascript
 var stylus = require('stylus');
 stylus(markup_input)
-  .plugin('stylus-lemonade')
+  .use(require('stylus-lemonade')())
   .render(function(err, css_output){
     console.log(css_output);
   });

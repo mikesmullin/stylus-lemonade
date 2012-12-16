@@ -6,11 +6,11 @@ var stylus = require('stylus')
 
 stylus(styl_input)
   .set('filename', styl_input_filename)
-  .plugin(__dirname + '/../../lib/stylus-lemonade', {
+  .use(require(__dirname + '/../../lib/stylus-lemonade')({
     image_path:  __dirname + '/../fixtures/private/images/',
     sprite_path: __dirname + '/../fixtures/public/images/',
     sprite_url:  '../images/'
-  })
+  }))
   .render(function(err, css_output) {
     if (err) throw err;
     fs.writeFileSync(css_output_filename, css_output);
