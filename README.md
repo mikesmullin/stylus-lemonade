@@ -8,6 +8,10 @@ within your `*.styl` markup to automatically fetch images and generate css sprit
 If you come from the Ruby on Rails community, you will immediately recognize conventions from Spriting
 with Compass/SASS, originally Lemonade.
 
+WARNING:
+--------
+Until my [pull request #923](https://github.com/LearnBoost/stylus/pull/923) is accepted, you'll have to use my fork of [Stylus](https://github.com/mikesmullin/stylus).
+
 Install
 -------
 
