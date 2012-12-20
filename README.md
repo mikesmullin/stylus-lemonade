@@ -6,7 +6,7 @@ which allows you to use functions like `sprite-position()`, `sprite-height()`, `
 within your `*.styl` markup to automatically fetch images and generate css sprites at render time.
 
 If you come from the Ruby on Rails community, you will immediately recognize conventions from Spriting
-with Compass/SASS, originally Lemonade.
+with [Compass](http://compass-style.org/help/tutorials/spriting/)/SASS, originally [Lemonade](http://www.hagenburger.net/BLOG/Lemonade-CSS-Sprites-for-Sass-Compass.html).
 
 WARNING:
 --------
