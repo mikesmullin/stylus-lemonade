@@ -10,7 +10,7 @@ with Compass/SASS, originally Lemonade.
 
 WARNING:
 --------
-Until my [pull request #923](https://github.com/LearnBoost/stylus/pull/923) is accepted, you'll have to use my fork of [Stylus](https://github.com/mikesmullin/stylus).
+Until my [pull request #923](https://github.com/LearnBoost/stylus/pull/923) is accepted, you'll have to [npm link](https://npmjs.org/doc/link.html) my fork of [Stylus](https://github.com/mikesmullin/stylus).
 
 Install
 -------
