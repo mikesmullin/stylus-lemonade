@@ -12,6 +12,11 @@ WARNING:
 --------
 Until my [pull request #923](https://github.com/LearnBoost/stylus/pull/923) is accepted, you'll have to [npm link](https://npmjs.org/doc/link.html) my fork of [Stylus](https://github.com/mikesmullin/stylus/commit/b672aa987e5cccd4b344095f2f4e1ef133158146).
 
+DEPRECATED:
+-----------
+Decided rather than waiting I would just do it a better way. Now focusing my energy on [CoffeeSprites](https://github.com/mikesmullin/coffee-sprites). 
+Will still keep stylus-lemonade around for posterity, but probably no new features.
+
 Install
 -------
 
