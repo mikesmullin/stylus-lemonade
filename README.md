@@ -1,3 +1,5 @@
+![Stylus Lemonade Logo](https://raw.github.com/mikesmullin/stylus-lemonade/master/stylus-lemonade.png)
+
 Stylus-Lemonade
 ===============
 
