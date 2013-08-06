@@ -12,7 +12,7 @@ with [Compass](http://compass-style.org/help/tutorials/spriting/)/SASS, original
 
 WARNING:
 --------
-Until my [pull request #923](https://github.com/LearnBoost/stylus/pull/923) is accepted, you'll have to [npm link](https://npmjs.org/doc/link.html) my fork of [Stylus](https://github.com/mikesmullin/stylus/commit/b672aa987e5cccd4b344095f2f4e1ef133158146).
+My [pull request #923](https://github.com/LearnBoost/stylus/pull/923) is accepted, but I'm being lazy. For now you'll have to [npm link](https://npmjs.org/doc/link.html) my fork of [Stylus](https://github.com/mikesmullin/stylus/commit/b672aa987e5cccd4b344095f2f4e1ef133158146).
 
 DEPRECATED:
 -----------
